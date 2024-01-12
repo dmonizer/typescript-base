@@ -1,3 +1,4 @@
 node_modules
 .idea/aws.xml
 .idea/jpa-buddy.xml
+.idea/sonarlint

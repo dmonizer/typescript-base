@@ -8,10 +8,48 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "nodemon": "^3.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <22.0.0"
+  },
+  "settings": {
+    "noInlineConfig": true,
+    "node": {
+      "tryExtensions": [
+        ".js",
+        ".ts",
+        ".d.ts"
+      ],
+      "moduleDirectory": [
+        "node_modules",
+        "src/"
+      ]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts",
+          ".d.ts"
+        ],
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ],
+        "typescript": {}
+      },
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "."
+      }
+    }
   }
 }
